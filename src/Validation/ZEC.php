@@ -6,10 +6,10 @@ use Merkeleon\PhpCryptocurrencyAddressValidation\Base58Validation;
 
 class ZEC extends Base58Validation
 {
-    // more info at https://en.bitcoin.it/wiki/List_of_address_prefixes
+    // more info at http://lenschulwitz.com/base58
     protected $base58PrefixToHexVersion = [
         't' => '1C',
-//        'z' => '16',
+        'z' => '16'
     ];
 
     protected $lengths = [

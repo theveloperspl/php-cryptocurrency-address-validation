@@ -16,14 +16,12 @@ class BCH extends Base58Validation
     public function validate($address)
     {
         $address = (string)$address;
-        try
-        {
+        try {
             $legacy = CashAddress::new2old($address);
-        }
-        catch (\Exception $ex)
-        {
+        } catch (\Exception $ex) {
             $legacy = $address;
         }
+
         return parent::validate($legacy);
     }
 }

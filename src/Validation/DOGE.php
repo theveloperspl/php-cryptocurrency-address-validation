@@ -2,7 +2,6 @@
 
 namespace Merkeleon\PhpCryptocurrencyAddressValidation\Validation;
 
-
 use Merkeleon\PhpCryptocurrencyAddressValidation\Base58Validation;
 
 class DOGE extends Base58Validation
